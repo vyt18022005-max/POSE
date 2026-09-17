@@ -294,3 +294,23 @@ body {
     }
 
 }
+
+@media (max-width: 600px) {
+    .photo-grid {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+
+    .photo-box {
+        aspect-ratio: 4 / 5;
+        height: auto;
+    }
+
+    .photo-box img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+        display: block;
+    }
+}
